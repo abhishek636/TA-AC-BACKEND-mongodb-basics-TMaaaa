@@ -85,11 +85,11 @@ use india - switched to db india
 
 - check list of databases to see newly created database.
 
-show dbs -  admin   0.000GB
-            config  0.000GB
-            local   0.000GB
+//show dbs -  admin   0.000GB
+              config  0.000GB
+              local   0.000GB
 
 
 - check which database you are currently connected to ?
 
-db.getName() - india
+//db.getName() - india
