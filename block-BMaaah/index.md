@@ -84,7 +84,7 @@ db.articles.update({"tags" : [ "js", "mongo" ]},{title: 'updated  the title with
 
 13. find an article using title and increment it's auhtor's age by 5.
 
-db.articles.update({title:"abcd"},{$inc:{"author.age": "5"}})
+db.articles.update({title:"abcd"},{$inc:{"author.age": 5}})
 
 14. Delete a document using \_id field with `db.COLLECTION_NAME.remove()`.
 
@@ -218,7 +218,10 @@ db.users.update({name: "Steve Ortega"},{$push:{sports: "golf"}})
 
 db.users.find({$or:[{sports:"football"},{sports:"cricket"}]}).pretty()
 
+db.users.find({sports:{$in:["football","cricket"]}})
+
 - Find all users whose name includes 'ri' in their name.
 
 
-db.user.find({name:{$in:["ri"]}})
+db.users.find({name: /ri/i}).pretty()
+
