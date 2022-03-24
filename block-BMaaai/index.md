@@ -8,6 +8,8 @@ DB_NAME --collection COLLECTION_NAME --file cities.json(file location) --jsonArr
 (an array of json data)
 ```
 
+mongoimport  --db test --collection users --file E:\AltCampus\MongoDB\generated.json --jsonArray
+
 host, username and password are optional fields.
 
 - --host : hostname // defaults to localhost:27017
